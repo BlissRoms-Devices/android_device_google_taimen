@@ -63,6 +63,10 @@ etc/permissions/obdm_permissions.xml
 etc/permissions/vzw_mvs_permissions.xml
 -framework/VerizonUnifiedSettings.jar:PRESIGNED
 -priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:PRESIGNED
+priv-app/MyVerizonServices/lib/arm64/libmotricity.so
+-priv-app/MyVerizonServices/MyVerizonServices.apk;PRESIGNED
+-priv-app/VerizonAuthDialog/VerizonAuthDialog.apk;PRESIGNED
+-priv-app/WfcActivation/WfcActivation.apk;PRESIGNED
 
 # Camera
 etc/permissions/com.google.android.camera.experimental2017.xml
