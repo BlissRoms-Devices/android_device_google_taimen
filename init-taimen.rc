@@ -40,29 +40,3 @@ on property:sys.all.modules.ready=1
 
 on property:ro.boot.hardware.display=2-1
     setprop sys.display.low_persistence_mode_brightness 255
-
-on early-boot
-
-    # Permission for laser sensor driver
-    chown camera camera /sys/class/wahoo_laser/laser/enable_ps_sensor
-
-    # Permission for Vibrator
-    chown system system /sys/class/leds/vibrator/device/mode
-    chown system system /sys/class/leds/vibrator/device/od_clamp
-    chown system system /sys/class/leds/vibrator/device/rtp_input
-    chown system system /sys/class/leds/vibrator/device/scale
-    chown system system /sys/class/leds/vibrator/device/set_sequencer
-    chown system system /sys/class/leds/vibrator/device/autocal_result
-    chown system system /sys/class/leds/vibrator/device/ctrl_loop
-    chown system system /sys/class/leds/vibrator/device/ol_lra_period
-    chown system system /sys/class/leds/vibrator/device/autocal
-    chown system system /sys/class/leds/vibrator/device/lp_trigger_effect
-
-    # Permission for LED driver
-    chown system system /sys/class/leds/red/on_off_ms
-    chown system system /sys/class/leds/green/on_off_ms
-    chown system system /sys/class/leds/blue/on_off_ms
-    chown system system /sys/class/leds/red/rgb_start
-    chown system system /sys/class/leds/green/rgb_start
-    chown system system /sys/class/leds/blue/rgb_start
-    chown system system /sys/class/graphics/fb0/msm_fb_persist_mode
